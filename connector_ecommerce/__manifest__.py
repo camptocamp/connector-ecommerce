@@ -10,11 +10,13 @@
     "website": "https://github.com/OCA/connector-ecommerce",
     "license": "AGPL-3",
     "depends": [
+        # odoo
         "delivery",
+        # OCA/bank-payment
+        "account_payment_sale",
         # OCA/connector
         "connector_base_product",
         # OCA/sale-workflow
-        "sale_automatic_workflow_payment_mode",
         "sale_exception",
     ],
     "data": [
@@ -22,10 +24,11 @@
         "security/ir.model.access.csv",
         "wizard/sale_ignore_cancel_view.xml",
         "data/ecommerce_data.xml",
-        "views/sale_view.xml",
-        "views/invoice_view.xml",
-        "views/stock_view.xml",
-        "views/payment_mode_view.xml",
+        "views/sale_order.xml",
+        "views/account_move.xml",
+        "views/stock_picking.xml",
+        "views/account_journal.xml",
+        "views/account_payment_method_line.xml",
     ],
     "installable": True,
 }
