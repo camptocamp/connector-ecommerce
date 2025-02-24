@@ -11,7 +11,7 @@
     "license": "AGPL-3",
     "depends": [
         # odoo
-        "delivery",
+        "stock_delivery",
         # OCA/bank-payment
         "account_payment_sale",
         # OCA/connector
