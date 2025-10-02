@@ -32,3 +32,10 @@ Events
 Data Model
 
 > Add structures shared for e-commerce connectors
+
+
+WARNING this module is based on bank-payment-alternative and is not compatible with the merged
+modules bank-payment.
+
+Before any clear decision was made, we went live with this solution.
+For the moment we will maintain this fork
